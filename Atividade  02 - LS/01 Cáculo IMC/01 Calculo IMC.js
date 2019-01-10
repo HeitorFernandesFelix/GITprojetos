@@ -12,7 +12,7 @@ function calcularIMC(parametro) {
 
 				// Condições para verificação
 
-				if (genero == 'Null') {}
+				
 
 				if (genero == 'Masculino') {
 
