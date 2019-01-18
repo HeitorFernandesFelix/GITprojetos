@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="03 Crie uma calculadora.css">
+</head>
+
+<body>
+<center>
+<div class="botoes">
+
+<form name="frm_calc" acton>
+	
+	<table>
+		
+		<input type="text" name="txt_01" value="" class="resultado">
+
+
+		<tr>
+			<td><input type="reset" value="AC" onclick="" class="cedulas" style="background-color: #D8BFD8"></td>
+
+			<td><input type="button" value="+/-" class="cedulas" style="background-color: #D8BFD8"></td>
+			<td><input type="button" value="%" class="cedulas" style="background-color: #D8BFD8"></td>
+			<td><input type="button" value="/" name="btn_divi" onclick="Operacao('/')" class="cedulas" style="background-color: #FF8C00"></td>
+		</tr>
+
+		<tr>
+			<td><input type="button" value="7" name="btn_7" onclick="NumeroPressionado(7)" class="cedulas"></td>
+			<td><input type="button" value="8" name="btn_8" onclick="NumeroPressionado(8)" class="cedulas"></td>
+			<td><input type="button" value="9" name="btn_9" onclick="NumeroPressionado(9)"class="cedulas"></td>
+			<td><input type="button" value="x" name="btn_mult" onclick="Operacao('*')" class="cedulas" style="background-color: #FF8C00"></td>
+		</tr>
+
+		<tr>
+			<td><input type="button" value="4" name="btn_4" onclick="NumeroPressionado(4)" class="cedulas"></td>
+			<td><input type="button" value="5" name="btn_5" onclick="NumeroPressionado(5)" class="cedulas"></td>
+			<td><input type="button" value="6" name="btn_6" onclick="NumeroPressionado(6)" class="cedulas"></td>
+			<td><input type="button" value="-" name="btn_subt" onclick="Operacao('-')" class="cedulas" style="background-color: #FF8C00"></td>
+		</tr>
+
+		<tr>
+			<td><input type="button" value="1" name="btn_1" onclick="NumeroPressionado(1)" class="cedulas"></td>
+			<td><input type="button" value="2" name="btn_2" onclick="NumeroPressionado(2)" class="cedulas" ></td>
+			<td><input type="button" value="3" name="btn_3" onclick="NumeroPressionado(3)" class="cedulas"></td>
+			<td><input type="button" value="+" name="btn_soma" onclick="Operacao('+')" class="cedulas" style="background-color: #FF8C00"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="." name="btn_pont" onclick="Ponto()"    class="cedulas"></td>
+			<td><input type="button" value="0" name="btn_0" onclick="NumeroPressionado(0)" class="cedulas"></td>
+			<td><input type="button" value="=" name="btn_igual" onclick="Operacao('=')" class="cedulas"></td>
+			<td><input type="button" value="Raiz²" name="btn_raiz" class="cedulas" style="background-color: #FF8C00"></td>
+		</tr>
+
+	</table>
+</form>
+<div/>
+</center>
+
+<script src="03 Crie uma calculadora.js"></script>
+</body>
+</html>
