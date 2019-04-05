@@ -1,0 +1,127 @@
+html, body{
+	margin: 0;
+	padding: 0;	
+	background-image: url(images/background-roxo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Arial Rounded MT;
+	color: white;
+}
+
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 60% 38%;
+	grid-gap: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.nested {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-auto-rows: 48%;
+	grid-gap: 1em;
+	margin-right: 1em;
+	margin-left: 1em;
+	margin-top: 100px;
+}
+
+.wrapper > div {
+	border: 1px solid white;
+	border-radius: 10px;
+}
+
+.nested > div {
+	border: 1px solid white;	
+	border-radius: 10px;
+	padding: 1em;
+	background: #151515;
+}
+
+#options {
+	border: none;
+}
+
+/*Em cima (Estrutura da Grid)*/
+
+label[class="title-box"] {
+	font-size: 20px;
+	font-style: italic;
+	color: #088A08;
+}
+
+input[type="text"] {
+	width: 100px;
+	height: 15px;
+	border: 1px solid white;
+	border-radius: 5px;
+	text-align: right;
+}
+
+.item {
+	font-size: 15px;
+}
+
+input[type="radio"] {
+	cursor: pointer;
+}
+
+input[type="checkbox"] {
+	cursor: pointer;
+}
+
+table {
+	width: 20em;
+}
+
+td[class="value"] {
+	float: right;
+}
+
+td[class="td-value-value"] {
+	float: right;
+	height: 1.5em;
+}
+#value-request{
+	background: #151515;
+	height: 82%;
+	margin-top: 100px;
+}
+
+.value-value-request {
+	height: 30%;
+	margin: 2em;
+	font-size: 20px;
+}
+
+.buttons-value-request {
+	height: 40%;
+	margin: 2em;
+}
+
+.buttons {
+	margin:1% 25%;
+	width: 200px;
+	height: 50px;
+	background: none;
+	color: white;
+	border: 1px solid white;
+	border-radius: 8px;
+	font-size: 25px;
+	font-family: Arial Rounded MT;
+}
+
+.buttons[id="confirmar"]:hover {
+	background: #088A08;
+	cursor: pointer;
+}
+
+.buttons[id="cancelar"]:hover {
+	background: #cc0000;
+	cursor: pointer;
+}
+
+#atualizar:hover {
+	background: #0061bc;
+	cursor: pointer;

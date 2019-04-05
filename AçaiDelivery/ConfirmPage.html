@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Açai Delivery - Confirmação</title>
+		<link rel="stylesheet" type="text/css" href="styles/confirm.css">
+	</head>
+	<body>
+		<div class="container-principal">
+			<div class="container-dados">
+
+				<form>
+					<div class="wrapper" align="center">
+
+						<div id="info-client">
+							<h1 align="center">Informações do Cliente</h1>
+							<p align="center" id="cliente"></p>
+						</div>
+
+						<div id="info-request">
+							<h1 align="center">Informações do Pedido</h1>
+							<p align="center" id="pedido"></p>
+							<p align="center" id="total"></p>
+						</div>
+
+						<div id="buttons">
+							<input type="button" value="Confirmar" class="buttons" id="confirmar" onclick="window.location='paginaFinal.html'"/>
+							<input type="button" value="Cancelar" class="buttons" id="cancelar" onclick="window.location='RequestPage.html'"/>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+
+		<script charset="utf-8" src="js/script.js"></script>
+		<script>mostrarPedido();</script>
+
+	</body>
+</html>

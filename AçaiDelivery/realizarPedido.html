@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/dados.css">
+	<title>Informar Dados | Açaí Delivery</title>
+</head>
+<body>
+	<div class="container-principal">
+
+				<div class="container-dados">
+
+					<p align="center" id="title">Dados Para Entrega</p>
+					<form action="requestpage.html" method="post" id="formulario">
+
+						<div id="nomeCompleto" align="center">
+	       					 <label for="nome">Nome:</label><br>
+	       					 <input required type="text" id="nome" placeholder="Informe o Nome Completo" />
+	    				</div>
+
+	    				<div id="e-mail" align="center">
+	        				<label for="email">E-mail:</label><br>
+	       					<input required type="email" id="email" placeholder="acai@delivery.com" />
+	    				</div>
+
+	    				<div id="contato" align="center">
+	       					 <label for="telefone">Contato:</label><br>
+	       					 <input required type="number" placeholder="DDD + Numero" id="telefone" />
+	    				</div>
+
+	    				<div id="endereco" align="center">
+	        				<label for="msg">Endereço:</label><br>
+	        				<input  required type="text" placeholder="Ex: Bairro: |Rua: |Nº: |Complemento:" id="msg">
+	    				</div>
+
+	    				<div>
+	       					 <button type="submit" onclick="salvarCliente()">Enviar Dados</button>
+	    				</div>
+
+	    				<div class="voltar">
+	    					<a href="index.html" >Cancelar</a>
+	    				</div>
+					</form>
+
+				</div>
+		</div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

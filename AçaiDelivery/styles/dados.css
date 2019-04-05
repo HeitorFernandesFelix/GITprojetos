@@ -1,0 +1,115 @@
+html, body{
+	padding: 0;
+	margin:0;
+	height: 100%;
+}
+.container-principal{
+	width: 100%;
+	height: 100%;
+	background-image: url(images/background-roxo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container-dados{
+	width: 50%;
+	height: 100%;
+	margin-left: 25%;
+	border:1px solid white;
+	background-color: #151515;
+	color: #FFFFFF;
+	font-family: Arial Rounded MT;
+	border-radius: 10px;
+}
+/*----------------------------*/
+#title{
+	font-size: 50px;
+}
+/*----------------------------*/
+#nomeCompleto{
+	font-size: 25px;
+	margin: 20px;
+}
+#nome{
+	width: 70%;
+	font-size: 15px;
+}
+/*----------------------------*/
+#e-mail{
+	font-size: 25px;
+	margin: 20px;
+}
+#email{
+	width: 70%;
+	font-size: 15px;
+}
+/*----------------------------*/
+#endereco{
+	font-size: 25px;
+	margin: 20px;
+}
+#msg{
+	width: 70%;
+	font-size: 15px;
+}
+/*----------------------------*/
+#contato{
+	font-size: 25px;
+	margin: 20px;
+}
+#telefone{
+	width: 70%;
+	font-size: 15px;
+}
+/*----------------------------*/
+button{
+	margin-top: 50PX;
+	margin-left: 55px;
+	width: 250px;
+	height: 30px;
+	float: left;
+	background: #000000;
+	color: #FFFFFF;
+	font-size: 17px;
+	font-family: Arial Rounded MT;
+	border: 1px solid white;
+	border-radius: 8px;
+}
+button:hover{
+	background: #088A08;
+	cursor: pointer;
+}
+.voltar{
+	margin-top: 50px;
+	margin-right: 55px;
+	padding-top: 5px;
+	width: 250px;
+	height: 25px;
+	float: right;
+	background: #000000;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 17px;
+	font-family: Arial Rounded MT;
+	border: 1px solid white;
+	border-radius: 8px;
+}
+
+.voltar:hover{
+	background: #cc0000;
+	cursor: pointer;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+input{
+	border-radius: 5px;
+}
+#msg{
+	border-radius: 5px;
+	height: 50%;
+	
+}
+
+

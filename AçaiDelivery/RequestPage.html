@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Açai Delivery - Pedido</title>
+		<link rel="stylesheet" type="text/css" href="styles/request.css">
+	</head>
+
+	<body>
+		<div class="wrapper-header"></div>
+		<div class="body">
+			<form name="request" action=ConfirmPage.html id="request">
+				<div class="wrapper">
+					<div id="options">
+						<div class="nested">
+							<div>
+								<label class="title-box">TAMANHOS</label>
+								<table>
+									<tr>
+										<td class="item">
+											<input required type="radio" name="tamanho" value="5.0 Pequeno" id="pequenoId" onclick="atualizarValores()"/><label for="pequenoId">Pequeno</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 5,00" disabled="disabled"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="item">
+											<input type="radio" name="tamanho" value="7.0 Medio" id="medioId" onclick="atualizarValores()"/><label for="medioId">Medio</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 7,00" disabled="disabled"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="item">
+											<input type="radio" name="tamanho" value="9.0 Grande" id="grandeId" onclick="atualizarValores()"/><label for="grandeId">Grande</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 9,00" disabled="disabled"/>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div>
+								<label class="title-box">FRUTAS</label>
+								<table>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Morango" onclick="atualizarValores()"/><label>Morango</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Banana" onclick="atualizarValores()"/><label>Banana</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Maçã" onclick="atualizarValores()"/><label>Maçã</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Mamão" onclick="atualizarValores()"/><label>Mamão</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Uva" onclick="atualizarValores()"/><label>Uva</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Cereja" onclick="atualizarValores()"/><label>Cereja</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Goji" onclick="atualizarValores()"/><label>Goji Berry</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div>
+								<label class="title-box">CEREAIS</label>
+								<table>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Granola" onclick="atualizarValores()"/><label>Granola</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Láctea" onclick="atualizarValores()"/><label>Farinha Láctea</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Leite" onclick="atualizarValores()"/><label>Leite em Pó</label>
+										</td>
+										<td class="value">
+											<input type="text"  value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Aveia" onclick="atualizarValores()"/><label>Aveia</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Amendoim" onclick="atualizarValores()"/><label>Farinha de Amendoim</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Cereal" onclick="atualizarValores()"/><label>Cereal Matinal</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div>
+								<label class="title-box">ESPECIAIS</label>
+								<table>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Mel" onclick="atualizarValores()"/><label>Mel</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Ovomaltine" onclick="atualizarValores()"/><label>Ovomaltine</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Chocolate" onclick="atualizarValores()"/><label>Chocolate</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Branco" onclick="atualizarValores()"/><label>Chocolate Branco</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Chantilly" onclick="atualizarValores()"/><label>Chantilly</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Ball" onclick="atualizarValores()"/><label>Choco Ball</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="item">
+											<input type="checkbox" name="acompanhamento" value="0.5 Avelã" onclick="atualizarValores()"/><label>Creme de Avelã</label>
+										</td>
+										<td class="value">
+											<input type="text" value="R$ 0,50" disabled="disabled"/>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div id="value-request">
+						<h1 align="center">VALOR DO PEDIDO</h1>
+						<div class="value-value-request">
+							<table class="table-values">
+								<tr>
+									<td>
+										<label>TAMANHO: </label>
+									</td>
+									<td class="td-value-value">
+										<input type="text" id="valorTamanho" value="R$ 0,00" disabled="disabled"/>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>ACOMPANHAMENTO: </label>
+									</td>
+									<td class="td-value-value">
+										<input type="text" id="valorAcompanhamento" placeholder="R$ 0,00" disabled="disabled"/>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>FRETE: </label>
+									</td>
+									<td class="td-value-value">
+										<input type="text" id="valorFrete" value="R$ 3,00" disabled="disabled"/>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>TOTAL: </label>
+									</td>
+									<td class="td-value-value">
+										<input type="text" id="valorTotal" placeholder= "R$ 0,00" disabled="disabled"/>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="buttons-value-request">
+							<input type="submit" value="Confirmar" class="buttons" id="confirmar" onclick="salvarPedido()"/>
+							<br>
+							<input type="button" value="Cancelar" class="buttons" id="cancelar" onclick="window.location = 'index.html' "/>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="wrapper-footer"></div>
+
+		<script src="js/script.js"></script>
+
+	</body>
+</html>

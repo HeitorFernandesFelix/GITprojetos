@@ -1,0 +1,85 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+.botao-inicio:hover{
+	background-color: #cc0000;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+.botao-dados:hover{
+	background-color: #088A08;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+.container-principal{
+	width: 100%;
+	height: 100%;
+	background-image: url(images/background-roxo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.titulo{
+	padding: 10px;
+	width: 100%;
+	color: #FFFFFF;
+	background-color: #000000;
+	border: 1px solid #FFFFFF;
+	border-radius: 10px;
+	font-size: 50px;
+	font-family: Arial Rounded MT;
+	text-align: center;
+}
+
+.tabela-geral{
+	margin-top: 50px;
+	padding: 5px;
+	width: 100%;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	border-radius: 10px;
+	background-color: #000000;
+	font-family: Arial Rounded MT;
+	text-align: center;
+}
+#dados{
+	font-size: 35px
+}
+.tamanho-fontes{
+	font-size: 20px;
+
+}
+.botao-dados{
+	width: 30%;
+	margin-top: 50px;
+	margin-right: 250px;
+	padding: 7px;
+	font-size: 25px;
+	border: 1px solid #FFFFFF;
+	background-color: #000000;
+	color: #FFFFFF;
+	border-radius: 10px;
+	font-family: Arial Rounded MT;
+	float: right;
+}
+
+.botao-inicio{
+	width: 30%;
+	margin-top: 50px;
+	margin-left: 250px;
+	padding: 7px;
+	font-size: 25px;
+	border: 1px solid #FFFFFF;
+	background-color: #000000;
+	color: #FFFFFF;
+	border-radius: 10px;
+	font-family: Arial Rounded MT;
+}
